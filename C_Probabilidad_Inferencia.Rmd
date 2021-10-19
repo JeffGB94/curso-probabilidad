@@ -1,0 +1,100 @@
+---
+title: |
+  \includegraphics[width=26cm]{EscudoUN.png}  
+  \thispagestyle{empty} 
+  \vspace*{2.0cm} 
+  \textbf{\huge Probabilidad e Inferencia Estadística}  
+  \vspace{5cm}
+author: |
+ |  \Large \textbf{Jefferson Gamboa Betancur}
+ |  \vspace{8cm}
+date: |
+  | \small Universidad Nacional de Colombia
+  | Ciencias, Escuela de Estadística
+  | Medellín, Colombia
+  | 2021
+documentclass: article
+geometry: 
+  - top=2cm
+  - left=1.8cm
+  - right=2cm
+  - bottom=2.54cm
+fontsize: 12pt
+pagestyle: empty
+papersize: a4
+linestretch: 1.5
+linkcolor: blue
+links-as-notes: true
+lang: "es"
+header-includes:
+- \usepackage[utf8]{inputenc}
+- \setlength{\parindent}{0pt}
+- \usepackage{graphicx}
+- \pagenumbering{gobble}
+- \usepackage{booktabs}
+- \usepackage{longtable}
+- \usepackage{array}
+- \usepackage{multirow}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \usepackage{colortbl}
+- \usepackage{pdflscape}
+- \usepackage{tabu}
+- \usepackage{threeparttable}
+- \usepackage{threeparttablex}
+- \usepackage[normalem]{ulem}
+- \usepackage{makecell}
+- \usepackage{xcolor}
+- \usepackage{hyperref}
+output: 
+    pdf_document: 
+      toc: yes
+      toc_depth: 3
+      number_sections: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  cache = TRUE,
+  message = FALSE,
+  error = FALSE,
+  warning = FALSE,
+  tidy.opts=list(width.cutoff = 80),
+  tidy = TRUE,
+  prompt = TRUE
+  )
+options(kableExtra.latex.load_packages = FALSE)
+require(kableExtra)
+```
+
+```{=tex}
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{2}
+\pagestyle{plain}
+```
+```{r, echo = FALSE}
+ITabla <- function(M){
+  kbl(M, booktabs = T) %>%
+  kable_styling(latex_options = c("striped", "hold_position"))
+}
+```
+
+# Introducción
+
+
+
+# Estadística Descriptivida
+
+# Probabilidad
+
+## Variables Aleatorias
+
+## Distribuciones Conjuntas
+
+## Valor Esperado
+
+## Distribuciones Muestrales
+
+# Inferencia Estadística
